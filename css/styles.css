@@ -139,7 +139,7 @@
     border-bottom:solid 3px #baedf5;
     padding-bottom: 5px;
   }
-  @media(max-width:680px){
+  @media(max-width:650px){
    nav{
     flex-direction: column;
     gap:3rem;
