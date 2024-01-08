@@ -1,0 +1,200 @@
+*{
+    font-family:"Century-Gothic", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    body {
+        font-family: 'Century-Gothic', sans-serif;
+        background-color: #fff;
+        overflow-x: hidden; 
+      }
+
+    .main{
+        width:110%;
+        height:400px;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        margin-top: -1vw;
+        background-color:#baedf5;
+        position:relative; 
+        overflow:hidden;
+        }
+        .sky{
+          position:absolute;
+          /*width:320%;*/
+          width:320%;
+          top:0px;
+          animation: skymove 80s infinite;
+        }
+        .birds{
+          position:absolute;
+          animation:birdmove 45s infinite;
+          top:30px;
+        }
+        .bmlogo{
+          position:absolute;
+          width:200px;
+          height:auto;
+          left:20%;
+          top:10%;
+        }
+        .surfskate,.surfskate2{
+          position:absolute;
+          width:100%;
+          bottom:0px;
+        }
+        .surfskate{
+          animation:skatemove 35s infinite;
+        }
+        .surfskate2{
+          animation:skatemove2 20s infinite;
+        }
+        .dog{
+          position:absolute;
+          width:100%;
+          animation:dogmove 15s infinite;
+          bottom:0px;
+        }
+        .conifers{
+          position:absolute;
+          width:320%;
+          height:auto;
+          animation:conifermove 150s infinite;
+          bottom:0%;
+        }
+        .deciduous{
+          position:absolute;
+          width:330%;
+          animation:decidmove 120s infinite;
+          bottom:0px;
+        }
+        .grasses{
+          position:absolute;
+          width:300%;
+          animation:grassmove 45s infinite;
+          bottom:-30px;
+        }
+        
+        @keyframes skymove{
+        /*{0%,100%{transform: translateX(0px);}}
+        {50%{transform: translateX(-1500px);}}*/
+        from{transform: translateX(-10%);}
+        to{transform: translateX(-50%);}
+        }
+        @keyframes birdmove{
+        10%{transform: translate(-10%,-20%) rotate(0deg) scale(1.0);}
+        65%{transform: translate(1000%,-5%) rotate(25deg) scale(1.5);}
+        }
+        @keyframes dogmove{
+          to{transform: translateX(100%);}
+        }
+        @keyframes skatemove{
+          from{transform: translateX(-50%);}
+          to{transform: translateX(150%);}
+        }
+        @keyframes skatemove2{
+          from{transform: translateX(-30%);}
+          to{transform: translateX(101%);}
+         }
+        @keyframes conifermove{
+          /*from{transform: translateX(-300px);}
+          to{transform: translateX(-500px);}*/
+          from{transform: translateX(-10%);}
+          to{transform: translateX(-50%);}
+        }
+        @keyframes decidmove{
+          /*from{transform: translateX(0%);}
+          to{transform: translateX(-15%);}
+          from{transform: translateX(0%);}*/
+          from{transform: translateX(-10%);}
+          to{transform: translateX(-50%);}
+        }
+        @keyframes grassmove{
+          from{transform: translateX(-10%);}
+          to{transform: translateX(-50%);}
+        }
+        
+
+    .navb a{
+    color:white;
+    }
+    .navb {
+        width:100%;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        margin-top:0;
+        background-color:#12202F;
+        position:fixed; 
+        display:block;
+        padding:30px;
+        text-align:center;
+
+    }
+    .navb a{
+        text-decoration:none;
+    }
+    .navb a:hover{
+        padding-bottom: 10px;
+        border-bottom:solid 3px #baedf5;
+    }
+    
+    @media screen and (max-width: 2000px) {
+        .navb {
+        width: 110%;
+        position: relative;
+      }  
+        .navb a {
+        display: inline;
+        padding: 15px;
+        padding:0 20px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+        .navb a {
+        display:block;
+        padding:10px;
+      }
+    }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  
+  }
+  h1{
+    font-family: 'Righteous', sans-serif;
+    font-size: 3rem;
+    color: #12202F;
+    letter-spacing: 0px;
+    line-height: 3rem;
+    font-weight: 700;
+    padding:10px;
+  }
+  h2{
+    padding:10px;
+  }
+  p{
+    line-height: 2rem;
+    padding:10px;
+  }
+  .aboutcontent {
+    max-width: 500px;
+    padding:20px;
+  }
+  .aboutcontact{
+    border-left:solid 1px #12202F;
+    padding-left: 15px;
+  }
+    
